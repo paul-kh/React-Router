@@ -8,16 +8,14 @@ import ProductDetailPage from "./pages/ProductDetail";
 
 const router = createBrowserRouter([
   {
-    path: "/", //The parent path
+    path: "/", // parenth path
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      /************************************************************************
-       * Any child path starts with '/' is ABSOLUTE PATH.
-       * By removing the '/', the path become relative to its parent path.
-       ***********************************************************************/
+      // The below index' prop indicate the home page with same path
+      // as the above parent path
       { index: true, element: <HomePage /> },
-      { path: "products", element: <ProductsPage /> }, // path = /root/products
+      { path: "products", element: <ProductsPage /> },
       { path: "products/:productId", element: <ProductDetailPage /> },
     ],
   },
