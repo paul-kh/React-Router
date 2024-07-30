@@ -16,7 +16,7 @@ const router = createBrowserRouter([
        * Any child path starts with '/' is ABSOLUTE PATH.
        * By removing the '/', the path become relative to its parent path.
        ***********************************************************************/
-      { path: "", element: <HomePage /> },
+      { index: true, element: <HomePage /> },
       { path: "products", element: <ProductsPage /> }, // path = /root/products
       { path: "products/:productId", element: <ProductDetailPage /> },
     ],
