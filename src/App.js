@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/Home";
 import ProductsPage from "./pages/Products";
 import RootLayout from "./pages/RootLayout";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   /*********************************************************************
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
 
     // We place all pages that will be wrapped by the <RootLayout>
     // in the children prop
