@@ -1,15 +1,16 @@
 import { Outlet } from "react-router-dom";
 import MainNavigation from "../components/MainNavigation";
+import classes from "./RootLayout.module.css";
 
 export default function RootLayout() {
   return (
     <>
-      <h1>
-        <MainNavigation />
-      </h1>
+      <MainNavigation />
       {/* The <Outlet> component marks the location where
           the children of the RootLayout will reside */}
-      <Outlet />
+      <main className={classes.content}>
+        <Outlet />
+      </main>
     </>
   );
 }
