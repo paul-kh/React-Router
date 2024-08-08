@@ -4,7 +4,7 @@ This app is just for practicing routing features in 'react-router-dom':
 
 - Creating routes using 'createBrowserRouter()' to define a router object
 - Rendering router object using <RouterProvider> compoment of 'react-router-dom'
-- Using <Link to="<path>"/> instead of <a href="url"> to navigate between paths
+- Using <Link to="<path>"/> to navigate between paths
 - Using <NavLink> instead of <Link> to have more control on currently 'active' link
 - Navigating Programmaticlly with 'useNavigate()' of 'react-router-dom'
 - Putting Navigation bar to all pages by wrapping them as children/<Outlet> of <RootLayout>
